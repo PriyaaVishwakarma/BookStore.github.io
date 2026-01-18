@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Book Store Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <div class="img">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div class="logo-header">
+            <h4><a href="index.html">Ashu</a></h4>
+            <small>Book Store Website</small>
+          </div>
+        </div>
+        <ul class="nav-list">
+          <div class="logo">
+            <div class="title">
+              <div class="img">
+                <img src="images/logo.png" alt="" />
+              </div>
+              <div class="logo-header">
+                <h4><a href="index.html">Ashu</a></h4>
+                <small>Book Store Website</small>
+              </div>
+            </div>
+            <button class="close"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/service.html">Service</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="Pages/book-filter.html">Books</a></li>
+          <button class="login"><a href="pages/login.html">Log In</a></button>
+          <button class="signup">
+            <i class="fa-solid fa-user"></i><a href="pages/registration.html">Sign Up</a>
+          </button>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="main">
+        <div class="content">
+          <small>Hindu books</small>
+          <h2>Special 50% Off</h2>
+          <h5>for our Indian community</h5>
+          <p>
+            We love helping to Printers and designers. We want to grow every day.
+             Our goal is to offer the best and useful content: Templates, png, vectors, and other things.
+          </p>
+          <div class="btns">
+            <button>Get The Deal<i class="fa-solid fa-arrow-right"></i></button>
+            <button>See other Promos</button>
+          </div>
+        </div>
+        <div class="img">
+          <img
+            src="images/two.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="square-dot">
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+        <i class="fa-solid fa-square"></i>
+      </div>
+      <div class="orange-circle"></div>
+      <div class="blue-circle"></div>
+    </section>
+
+    <section class="service">
+      <div class="service-container">
+        <div class="service-card">
+          <div class="icon">
+            <i class="fa-solid fa-bolt-lightning"></i>
+          </div>
+          <div class="service-content">
+            <h5>Quick Delivery</h5>
+            <p>
+              Get your next great read delivered to your doorstep in record time! Our curated collection is packed and shipped immediately, ensuring that your favorite stories arrive whenever you need them. 
+              No more waiting—experience lightning-fast delivery and dive into your new book today.
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="icon">
+            <i class="fa-solid fa-shield"></i>
+          </div>
+          <div class="service-content">
+            <h5>Secure Payment</h5>
+            <p>
+              Shop with confidence knowing that your payment information is protected by our state-of-the-art security measures. We utilize advanced encryption technology to ensure that your transactions are safe and secure. 
+              Enjoy a worry-free shopping experience with multiple secure payment options available.                                                                                                                                                                                                                                                                                                             
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="icon">
+            <i class="fa-solid fa-thumbs-up"></i>
+          </div>
+          <div class="service-content">
+            <h5>Best Quality</h5>
+            <p>
+              We are committed to providing you with the highest quality products. Each item in our collection is carefully selected and undergoes rigorous quality checks to ensure it meets our standards. 
+              Experience the difference of premium craftsmanship and materials with every purchase you make from us.
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="icon">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="service-content">
+            <h5>Return Guarantee</h5>
+            <p>
+              Your satisfaction is our top priority. If you're not completely happy with your purchase, we offer a hassle-free return guarantee. 
+              Simply contact our customer service team within the specified return period, and we'll guide you through the easy return process. Shop with confidence knowing that we've got you covered.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="suggestion">
+      <div class="container">
+        <div class="recommend">
+          <h4>Recommended For You</h4>
+          <p>
+            The Hindu’s Bookshelf:
+             ‘Where do we begin?’ A reader’s guide to picking your first books by some great authors
+          </p>
+          <div class="book-container">
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/book-1.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/book-2.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/book-3.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/book-4.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+          </div>
+          <div class="circle-1"></div>
+          <div class="circle-2"></div>
+          <div class="square-dot">
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+          </div>
+        </div>
+        <div class="popular">
+          <h4>Popular in 2025</h4>
+          <p>
+            This are most Amzing books in 2025 which you must read
+          </p>
+          <div class="book-container">
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/book-5.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/6.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/book-7.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+            <div class="book">
+              <figure>
+                <a href="Pages/book-detail.html"
+                  ><img src="images/book-8.jpg" alt=""
+                /></a>
+              </figure>
+            </div>
+          </div>
+          <div class="circle-1"></div>
+          <div class="circle-2"></div>
+          <div class="square-dot">
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+            <i class="fa-solid fa-square"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="header">
+        <h4>Special Offers</h4>
+        <p>
+         Buy Hindu Books Online at Best Prices in India | Free Shipping & Cash on Delivery | Ashu Book Store
+        </p>
+      </div>
+      <div class="offer-container">
+        <div class="offer">
+          <div class="img">
+            <a href="Pages/book-detail.html"
+              ><img src="images/book-1.jpg" alt=""
+            /></a>
+          </div>
+          <div class="offer-content">
+            <h5>Krishna's katha</h5>
+            <div class="genre">
+              <span>biography</span>
+              <span>Ritual</span>
+              <span>Devot</span>
+            </div>
+            <p>
+              Krishna ji lived in a small village called Vrindavan, where he spent his childhood and youth. He was known for his mischievous nature and his love for playing the flute.                           
+            </p>
+            <small>Kabir Kapoor</small>
+            <div class="offer-bottom">
+              <button class="cartbtn">
+                <i class="fa-solid fa-cart-shopping"></i>Add to cart
+              </button>
+              <div class="price">
+                <strong><span>Rs.</span>18.7</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offer">
+          <div class="img">
+            <a href="Pages/book-detail.html"
+              ><img src="images/book-3.jpg" alt=""
+            /></a>
+          </div>
+          <div class="offer-content">
+            <h5>Anurag</h5>
+            <div class="genre">
+              <span>biography</span>
+              <span>Ritual</span>
+              <span>Devot</span>
+            </div>
+            <p>
+              Ramayan is an ancient Indian epic that narrates the life and adventures of Lord Rama, an incarnation of the Hindu god Vishnu. It is attributed to the sage Valmiki and is considered one of the two major Sanskrit epics of ancient India, the other being the Mahabharata.                         
+            </p>
+            <small>Kabir Kapoor</small>
+            <div class="offer-bottom">
+              <button class="cartbtn">
+                <i class="fa-solid fa-cart-shopping"></i>Add to cart
+              </button>
+              <div class="price">
+                <strong><span>Rs.</span>18.7</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offer">
+          <div class="img">
+            <a href="pages/book-detail.html"
+              ><img src="images/book-2.jpg" alt=""
+            /></a>
+          </div>
+          <div class="offer-content">
+            <h5>Ramayan</h5>
+            <div class="genre">
+              <span>biography</span>
+              <span>Ritual</span>
+              <span>Devot</span>
+            </div>
+            <p>
+              Ramayan is an ancient Indian epic that narrates the life and adventures of Lord Rama, an incarnation of the Hindu god Vishnu. It is attributed to the sage Valmiki and is considered one of the two major Sanskrit epics of ancient India, the other being the Mahabharata.
+            </p>
+            <small>Gopi Katha</small>
+            <div class="offer-bottom">
+              <button class="cartbtn">
+                <i class="fa-solid fa-cart-shopping"></i>Add to cart
+              </button>
+              <div class="price">
+                <strong><span>Rs.</span>18.7</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sale">
+      <div class="header">
+        <h4>Flash Sale</h4>
+        <p>
+          Hurry up! Limited time offer on these amazing Hindu books.  
+        </p>
+      </div>
+      <div class="timer">
+        <div class="hours">
+          <span id="hour"></span>
+          <small>Hours</small>
+        </div>
+        <div class="minutes">
+          <span id="minute"></span>
+          <small for="minute">Minutes</small>
+        </div>
+        <div class="seconds">
+          <span id="second"></span>
+          <small for="second">Seconds</small>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book">
+          <div class="img">
+            <a href="Pages/book-detail.html"
+              ><img src="images/book-9.jpg" alt="" />
+            </a>
+          </div>
+          <h5>God Buddhism</h5>
+          <small>Hindu Gods</small>
+          <div class="price">
+            <span>Rs.54.6</span>
+            <span><strike>Rs.70.00</strike></span>
+          </div>
+        </div>
+        <div class="book">
+          <div class="img">
+            <a href="Pages/book-detail.html"
+              ><img src="images/book-10.jpg" alt=""
+            /></a>
+          </div>
+          <h5>Guru Govind</h5>
+          <small>Hindu Gods</small>
+          <div class="price">
+            <span>Rs.54.6</span>
+            <span><strike>Rs.70.00</strike></span>
+          </div>
+        </div>
+        <div class="book">
+          <div class="img">
+            <a href="Pages/book-detail.html"
+              ><img src="images/book-11.jpg" alt=""
+            /></a>
+          </div>
+          <h5>Vishnu Katha</h5>
+          <small>Hindu Gods</small>
+          <div class="price">
+            <span>Rs.54.6</span>
+            <span><strike>Rs.70.00</strike></span>
+          </div>
+        </div>
+        <div class="book">
+          <div class="img">
+            <a href="Pages/book-detail.html"
+              ><img src="images/book-5.jpg" alt=""
+            /></a>
+          </div>
+          <h5>Kabir Kapoor</h5>
+          <small>Hindu Gods</small>
+          <div class="price">
+            <span>Rs.54.6</span>
+            <span><strike>Rs.70.00</strike></span>
+          </div>
+        </div>
+        <div class="book">
+          <div class="img">
+            <a href="Pages/book-detail.html"
+              ><img src="images/book-2.jpg" alt="" />
+            </a>
+          </div>
+          <h5>Krishna's katha</h5>
+          <small>Hindu Gods</small>
+          <div class="price">
+            <span>Rs.54.6</span>
+            <span><strike>Rs.70.00</strike></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="book-sale">
+      <div class="heading">
+        <h4>Books On Sale</h4>
+        <div class="arrowbtn">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="wrapper">
+          <ul class="carousel">
+            <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/book-1.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>Krishna's katha</h5>
+              <div class="genre">
+                <span>Hindus,</span><span>Ritual</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>Rs.45.4</span>
+                  <span><strike>Rs.90.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/book-2.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>The Hindus ...</h5>
+              <div class="genre">
+                <span>Hindus,</span><span>Ritual</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>Rs.45.4</span>
+                  <span><strike>Rs.90.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/book-9.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>God...</h5>
+              <div class="genre">
+                <span>Hindus,</span><span>Ritual</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>Rs.45.4</span>
+                  <span><strike>Rs.90.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/book-10.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>Guru Govind</h5>
+              <div class="genre">
+                <span>Hindus,</span><span>Ritual</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>Rs.45.4</span>
+                  <span><strike>Rs.90.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/book-5.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5> Ram katha</h5>
+              <div class="genre">
+                <span>Hindus,</span><span>Ritual</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>Rs.45.4</span>
+                  <span><strike>Rs.90.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/6.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>Vivekanand</h5>
+              <div class="genre">
+                <span>Hindus,</span><span>Ritual</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>Rs.45.4</span>
+                  <span><strike>Rs.90.4</strike></span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="Pages/book-detail.html"><img src="images/book-7.jpg" alt="" /></a>
+                <span class="badge">50%</span>
+              </div>
+              <h5>Tilak</h5>
+              <div class="genre">
+                <span>Hindus,</span><span>Ritual</span>
+              </div>
+              <div class="footer">
+                <span class="star"><i class="fa fa-star"></i> 4.7</span>
+                <div class="price">
+                  <span>Rs.45.4</span>
+                  <span><strike>Rs.90.4</strike></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="main">
+        <div class="content">
+          <h4>Featured Books</h4>
+          <p>
+            Explore our handpicked selection of featured Hindu books that offer profound insights into spirituality, culture, and philosophy. 
+            Each book is chosen for its ability to enlighten and inspire readers on their journey of understanding Hinduism.
+          </p>
+          <div class="featured-book-card">
+            <div class="img">
+              <a href="pages/book-detail.html"><img src="images/book-2.jpg" alt="" /></a>
+            </div>
+            <div class="card-description">
+              <div class="card-header">
+                <div class="icon">
+                  <i class="fa-regular fa-bookmark"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="title">
+                  <h5>The Swami Ramdas</h5>
+                  <small>biography, Hindus</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6>Emotional</h6>
+                <p>
+                  Swami Ramdas was a renowned Indian saint and spiritual teacher who lived from 1884 to 1963. Born as Vittal Rao in Kerala, India, he renounced worldly life at a young age and embarked on a spiritual journey that led him to become one of the most revered saints of his time.
+                </p>
+                <div class="author-year">
+                  <div class="author">
+                    <small>Written by</small>
+                    <strong>Kabir Kapoor</strong>
+                  </div>
+                  <div class="year">
+                    <small>Year</small>
+                    <strong>2019</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="price">
+                  <span>Rs.84.78</span>
+                  <strike>Rs.90.00</strike>
+                </div>
+                <div class="cartbtn">
+                  <button><i class="fa-solid fa-cart-shopping"></i>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="book-section">
+          <div class="container">
+            <div class="img">
+              <a href="pages/book-detail.html"><img src="images/book-2.jpg" alt="" /></a>
+            </div>
+            <div class="img">
+              <a href="pages/book-detail.html"><img src="images/book-1.jpg" alt="" /></a>
+            </div>
+            <div class="img">
+              <a href="pages/book-detail.html"><img src="images/book-3.jpg" alt="" /></a>
+            </div>
+            <div class="img">
+              <a href="pages/book-detail.html"><img src="images/book-4.jpg" alt="" /></a>
+            </div>
+            <div class="img">
+              <a href="pages/book-detail.html"><img src="images/book-5.jpg" alt="" /></a>
+            </div>
+            <div class="img">
+              <a href="pages/book-detail.html"><img src="images/book-6.jpg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+    </section>
+
+    <section class="news">
+      <div class="heading">
+        <div class="title">
+          <h4>Latest News</h4>
+          <p>
+            Stay updated with the latest news and insights from the world of Hindu literature and culture. Our news section brings you articles, reviews, and features on new book releases, author interviews, and significant events in the Hindu literary community.
+          </p>
+        </div>
+        <div class="btn">
+          <button>View More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="news-container">
+        <div class="post">
+          <div class="img">
+            <img src="images/news-1.avif" alt="" />
+          </div>
+          <h5>Why reading is important for our children?</h5>
+          <p>
+            books are a great way to introduce children to new ideas, cultures, and perspectives. They can help children develop empathy and understanding for others, as well as broaden their horizons and expand their worldview. Aspernatur, quo temporibus! Tenetur...                                             
+            <a href="">Continue reading</a>
+          </p>
+          <div class="post-footer">
+            <div class="img">
+              <img src="images/book-8.jpg" alt="" />
+            </div>
+            <div class="details">
+              <strong>Sunita Devi</strong>
+              <small>5 August 2025</small>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="img">
+            <img src="images/news-2.webp" alt="" />
+          </div>
+          <h5>Why reading is important for our children?</h5>
+          <p>
+           books are a great way to introduce children to new ideas, cultures, and perspectives. They can help children develop empathy and understanding for others, as well as broaden their horizons and expand their worldview. Aspernatur, quo temporibus! Tenetur...  
+            <a href="">Continue reading</a>
+          </p>
+          <div class="post-footer">
+            <div class="img">
+              <img src="images/book-8.jpg" alt="" />
+            </div>
+            <div class="details">
+              <strong>Mamta Devi</strong>
+              <small>5 August 2025</small>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="img">
+            <img src="images/news-3.jpg" alt="" />
+          </div>
+          <h5>Why reading is important for our children?</h5>
+          <p>
+            books are a great way to introduce children to new ideas, cultures, and perspectives. They can help children develop empathy and understanding for others, as well as broaden their horizons and expand their worldview. Aspernatur, quo temporibus! Tenetur...
+            <a href="">Continue reading</a>
+          </p>
+          <div class="post-footer">
+            <div class="img">
+              <img src="images/book-8.jpg" alt="" />
+            </div>
+            <div class="details">
+              <strong>Pinki Devi</strong>
+              <small>5 August 2025</small>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="img">
+            <img src="images/news-4.jpg" alt="" />
+          </div>
+          <h5>Why reading is important for our children?</h5>
+          <p>
+            books are a great way to introduce children to new ideas, cultures, and perspectives. They can help children develop empathy and understanding for others, as well as broaden their horizons and expand their worldview. Aspernatur, quo temporibus! Tenetur...
+            Aspernatur, quo temporibus! Tenetur...
+            <a href="">Continue reading</a>
+          </p>
+          <div class="post-footer">
+            <div class="img">
+              <img src="images/book-8.jpg" alt="" />
+            </div>
+            <div class="details">
+              <strong>Gayatri Devi</strong>
+              <small>5 August 2025</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown">
+      <div class="container">
+        <div class="customer counter">
+          <div class="icon">
+            <i class="fa-solid fa-user-group"></i>
+          </div>
+          <div class="content">
+            <h4 class="count">125,663</h4>
+            <small>Happy Customers</small>
+          </div>
+        </div>
+        <div class="book counter">
+          <div class="icon">
+            <i class="fa-solid fa-book"></i>
+          </div>
+          <div class="content">
+            <h4 class="count">50,672</h4>
+            <small>Book Collections</small>
+          </div>
+        </div>
+        <div class="store counter">
+          <div class="icon">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <div class="content">
+            <h4 class="count">1,562</h4>
+            <small>Our Stores</small>
+          </div>
+        </div>
+        <div class="writer counter">
+          <div class="icon">
+            <i class="fa-solid fa-feather"></i>
+          </div>
+          <div class="content">
+            <h4 class="count">457</h4>
+            <small>Famous Writer</small>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscription">
+      <div class="container">
+        <h4>
+          Subscribe our newsletter for Latest <br />
+          books updates
+        </h4>
+        <div class="input">
+          <input type="text" placeholder="Type your email here" />
+          <button>subscribe</button>
+        </div>
+      </div>
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="logo-description">
+          <div class="logo">
+            <div class="img">
+              <img src="images/logo.png" alt="" />
+            </div>
+            <div class="title">
+              <h4>Ashu</h4>
+              <small>Book Store Website</small>
+            </div>
+          </div>
+          <div class="logo-body">
+            <p>
+              Ashu Book Store is your ultimate destination for a diverse collection of Hindu literature. 
+              Explore our curated selection of books that delve into the rich tapestry of Hindu culture, spirituality, and philosophy. 
+              Whether you're seeking ancient scriptures, contemporary interpretations, or insightful commentaries, Ashu Book Store has something for every reader. 
+              Immerse yourself in the wisdom of Hinduism and embark on a journey of knowledge and enlightenment with us.
+            </p>
+          </div>
+          <div class="social-links">
+            <h4>Follow Us</h4>
+            <ul class="links">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="categories list">
+          <h4>Book Categories</h4>
+          <ul>
+            <li><a href="Pages/book-filter.html">Action</a></li>
+            <li><a href="Pages/book-filter.html">Hindus</a></li>
+            <li><a href="Pages/book-filter.html">Comedy</a></li>
+            <li><a href="Pages/book-filter.html">Crime</a></li>
+            <li><a href="Pages/book-filter.html">Drama</a></li>
+            <li><a href="Pages/book-filter.html">Fantasy</a></li>
+            <li><a href="Pages/book-filter.html">Horror</a></li>
+          </ul>
+        </div>
+        <div class="quick-links list">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="pages/contact.html">Contact Us</a></li>
+            <li><a href="pages/book-filter.html">Products</a></li>
+            <li><a href="pages/login.html">Login</a></li>
+            <li><a href="pages/registration.html">Sign Up</a></li>
+            <li><a href="pages/cart-item.html">Cart</a></li>
+            <li><a href="pages/checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+        <div class="our-store list">
+          <h4>Our Store</h4>
+          <div class="map" style="margin-top: 1rem">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6310.594819201665!2d-122.42768319999999!3d37.73616639999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e60a337d5f5%3A0xfa0bb626904e5ab2!2z4KSV4KWJ4KSy4KWH4KScIOCkueCkv-Cksiwg4KS44KS-4KSoIOCkq-CljeCksOCkvuCkguCkuOCkv-CkuOCljeCkleCliywg4KSV4KWI4KSy4KWA4KSr4KWL4KSw4KWN4KSo4KS_4KSv4KS-LCDgpK_gpYLgpKjgpL7gpIfgpJ_gpYfgpKEg4KS44KWN4KSf4KWH4KSf4KWN4oCN4KS4!5e0!3m2!1shi!2sin!4v1686917463994!5m2!1shi!2sin"
+              height="70"
+              style="width: 100%; border: none; border-radius: 5px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <ul>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-location-dot"></i>832 Priya Vishwakarma,
+                Ashu Graphics 107,India</a
+              >
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-phone"></i>+12 1345678991</a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-envelope"></i>support@Ashu.id</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top"><i class="fa-solid fa-chevron-up"></i></button>
+    <script src="js/back-to-top.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/repeat-js.js"></script>
+    <script src="js/add-to-cart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  </body>
+</html>
