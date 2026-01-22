@@ -1,36 +1,243 @@
-/* --- Entrance Animations --- */
+/* --- GLOBAL STYLES & ANIMATIONS --- */
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
-/* --- Floating Animation for Hero Image --- */
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-15px); }
     100% { transform: translateY(0px); }
 }
 
-/* --- Subtle Button Pulse --- */
 @keyframes pulse-glow {
     0% { box-shadow: 0 0 0 0 rgba(108, 93, 212, 0.4); }
     70% { box-shadow: 0 0 0 10px rgba(108, 93, 212, 0); }
     100% { box-shadow: 0 0 0 0 rgba(108, 93, 212, 0); }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+/* --- NAVIGATION --- */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.navbar .logo-header a{
+    text-decoration: none;
+    color: #131428;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar .nav-list{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar .nav-list li{ list-style: none; }
+
+.navbar .nav-list li a{
+    text-decoration: none;
+    color: #131428;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Hover line effect for Nav */
+.navbar .nav-list li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #6c5dd4;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-list li a:hover::after { width: 100%; }
+.navbar .nav-list li a:hover{ color: #6c5dd4; }
+
+.navbar .nav-list .signup{
+    background-color: #6c5dd4;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px 18px;
+    animation: pulse-glow 2s infinite;
+    transition: 0.3s;
+}
+
+.navbar .nav-list .signup:hover { transform: scale(1.05); }
+
+/* --- HERO SECTION --- */
+.hero{
+    background-color: #f2f0fe;
+    margin: 25px 30px;
+    padding: 50px 30px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hero .main .content{
+    width: 45%;
+    animation: fadeInLeft 1s ease-out forwards;
+}
+
+.hero .main img{
+    max-width: 400px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.hero .content h2{
+    color: #131428;
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.hero .content .btns button:nth-child(1){
+    background-color: #6c5dd4;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero .content .btns button:nth-child(1):hover {
+    box-shadow: 0 10px 20px rgba(108, 93, 212, 0.3);
+    transform: translateY(-3px);
+}
+
+/* --- CARDS & SERVICES --- */
+.service-container .service-card, .offer, .post, .featured-book-card, .card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.service-card:hover, .offer:hover, .post:hover, .featured-book-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Scroll Animation Trigger */
+.service-card, .offer, .post, .counter {
+    animation: fadeInUp 0.8s ease-out both;
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    padding: 80px 30px;
+}
+
+/* --- BOOK OFFERS & IMAGES --- */
+.offer-container .offer .img img, .book img, .card img {
+    transition: transform 0.5s ease;
+}
+
+.offer:hover .img img, .book:hover img, .card:hover img {
+    transform: scale(1.1) rotate(3deg);
+}
+
+.offer-bottom .cartbtn {
+    background-color: #6c5dd4;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.offer-bottom .cartbtn:hover {
+    background-color: #5649b3;
+    letter-spacing: 1px;
+}
+
+/* --- SUBSCRIPTION SECTION --- */
+.subscription{
+    margin-top: 8rem;
+    background-color: #6c5dd4;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.subscription .input button:hover {
+    background-color: #ff9f5a;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* --- BACK TO TOP --- */
+.back-to-top{
+    position: fixed;
+    opacity: 0;
+    bottom: 30px;
+    right: 30px;
+    background-color: #6c5dd4;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.back-to-top.show { opacity: 1; }
+.back-to-top:hover { transform: translateY(-5px); background: #131428; }
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media only screen and (max-width: 909px){
+    .navbar .nav-list{
+        position: fixed;
+        right: -100%;
+        top: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 300px;
+        height: 100vh;
+        transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        padding-top: 80px;
+    }
+    .nav-list.active{ right: 0; }
+    
+    .hero .main{ flex-direction: column; text-align: center; }
+    .hero .main .content { width: 100%; }
+    .hero .main img { margin-top: 40px; }
+}
+
+@media only screen and (max-width: 670px){
+    .service-container { grid-template-columns: 1fr; }
+    .offer-container { flex-direction: column; align-items: center; }
 }
