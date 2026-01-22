@@ -29,6 +29,15 @@ function flipAllCards(time) {
   minute.innerHTML = minutes;
   second.innerHTML = seconds;
 }
+// Add this to your js/script.js to make the timer numbers "pop"
+function animateValue(id) {
+    const el = document.getElementById(id);
+    el.style.transform = "scale(1.2)";
+    setTimeout(() => {
+        el.style.transform = "scale(1)";
+    }, 200);
+}
+// Call animateValue('second') whenever your timer logic updates the HTML
 
 
 // Counter section logic
