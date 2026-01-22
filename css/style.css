@@ -1303,4 +1303,39 @@ footer .container .list a:hover{
     padding: 0px;
     margin-top: 0.5rem;
   }
+    /* Zoom effect on book covers */
+.book img, .card img, .offer .img img {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+.book img:hover, .card img:hover, .offer .img img:hover {
+    transform: scale(1.08) rotate(1deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Button "Pulse" animation */
+.btns button:first-child, .cartbtn button {
+    transition: all 0.3s ease;
+}
+
+.btns button:first-child:hover, .cartbtn button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    filter: brightness(1.1);
+}
+
+/* Navbar link slide-in effect */
+.nav-list li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff9d00; /* Matching your theme color */
+    transition: width .3s;
+}
+
+.nav-list li a:hover::after {
+    width: 100%;
+}
+}
+
