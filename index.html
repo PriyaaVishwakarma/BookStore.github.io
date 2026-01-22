@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Book Store Website</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--- google font link-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-    />
     <!-- Fontawesome Link for Icons -->
     <link
       rel="stylesheet"
@@ -81,7 +81,7 @@
 
     <section class="hero">
       <div class="main">
-        <div class="content">
+        <div class="content" data-aos="fade-right" >
           <small>Hindu books</small>
           <h2>Special 50% Off</h2>
           <h5>for our Indian community</h5>
@@ -94,7 +94,7 @@
             <button>See other Promos</button>
           </div>
         </div>
-        <div class="img">
+        <div class="img"data-aos="fade-left">
           <img
             src="images/teenager-student-girl-yellow-pointing-finger-side-copy.png"
             alt=""
@@ -121,7 +121,7 @@
 
     <section class="service">
       <div class="service-container">
-        <div class="service-card">
+        <div class="service-card" data-aos="zoom-in">
           <div class="icon">
             <i class="fa-solid fa-bolt-lightning"></i>
           </div>
@@ -133,7 +133,7 @@
             </p>
           </div>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-aos="zoom-in">
           <div class="icon">
             <i class="fa-solid fa-shield"></i>
           </div>
@@ -145,7 +145,7 @@
             </p>
           </div>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-aos="zoom-in">
           <div class="icon">
             <i class="fa-solid fa-thumbs-up"></i>
           </div>
@@ -157,7 +157,7 @@
             </p>
           </div>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-aos="zoom-in">
           <div class="icon">
             <i class="fa-solid fa-star"></i>
           </div>
@@ -921,6 +921,14 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Animation speed in ms
+    offset: 120,    // Start animation when element is 120px from viewport
+    once: true      // Animation happens only once while scrolling
+  });
+</script>
     <button class="back-to-top"><i class="fa-solid fa-chevron-up"></i></button>
     <script src="js/back-to-top.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
