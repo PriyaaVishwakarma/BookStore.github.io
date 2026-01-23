@@ -169,6 +169,120 @@
   font-size: 20px;
   border: none;
 }
+
+
+/* ===== HERO ANIMATIONS ===== */
+
+/* Hero fade + scale */
+.hero{
+  animation: heroFade 0.8s ease forwards;
+}
+
+@keyframes heroFade{
+  from{
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Content slide from left */
+.hero .content{
+  animation: contentSlide 0.9s ease forwards;
+}
+
+@keyframes contentSlide{
+  from{
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Image slide from right */
+.hero .main img{
+  animation: imageSlide 1s ease forwards;
+}
+
+@keyframes imageSlide{
+  from{
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Floating background circles */
+.hero .orange-circle{
+  animation: floatOrange 6s ease-in-out infinite;
+}
+
+.hero .blue-circle{
+  animation: floatBlue 7s ease-in-out infinite;
+}
+
+@keyframes floatOrange{
+  0%,100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(25px);
+  }
+}
+
+@keyframes floatBlue{
+  0%,100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-25px);
+  }
+}
+
+/* Square dot pulse */
+.hero .square-dot{
+  animation: dotPulse 3s ease-in-out infinite;
+}
+
+@keyframes dotPulse{
+  0%,100%{
+    opacity: 0.4;
+  }
+  50%{
+    opacity: 1;
+  }
+}
+
+/* Buttons hover animation */
+.hero .content .btns button{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero .content .btns button:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(108,93,212,0.25);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .hero{
     background-color: #f2f0fe;
     margin: 25px 30px;
