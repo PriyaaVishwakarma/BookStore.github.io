@@ -3,6 +3,61 @@
     margin: 0;
     font-family: 'Poppins',sans-serif;
 }
+/* ===== SCROLL ANIMATED NAVBAR (NO HTML CHANGE) ===== */
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+/* Scroll state */
+.navbar.scrolled{
+  background-color: #ffffff;
+  padding: 12px 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* Logo animation */
+.navbar.scrolled .logo img{
+  width: 42px;
+}
+
+/* Text color */
+.navbar.scrolled .logo-header a,
+.navbar.scrolled .nav-list li a{
+  color: #131428;
+}
+
+/* Button animation */
+.navbar.scrolled .nav-list .login{
+  background-color: #f1eeff;
+}
+
+.navbar.scrolled .nav-list .signup{
+  background-color: #6c5dd4;
+}
+
+/* Smooth slide animation */
+.navbar.scrolled{
+  animation: navbarSlide 0.35s ease;
+}
+
+@keyframes navbarSlide{
+  from{
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 .navbar{
     display: flex;
     justify-content: space-between;
