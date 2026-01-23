@@ -1,5 +1,5 @@
 body {
-  background-image: url("images/pexels-scottwebb-1903747.jpg");
+  background-image: url("images/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -194,7 +194,7 @@ body {
       rgba(32, 178, 170, 0.5),
       rgba(32, 178, 170, 0.5)
     ),
-    url("images/pexels-scottwebb-1903747.jpg");
+    url("images/background.jpg");
   background-size: cover;
   background-position: center;
 }
