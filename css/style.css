@@ -1,5 +1,10 @@
-body {
-  background-color: #20B2AA;
+
+  body {
+  background-image: url("../images/pexels-ifreestock-572487.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 
