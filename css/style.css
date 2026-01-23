@@ -1,7 +1,17 @@
+body {
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
 *{
     padding: 0;
     margin: 0;
     font-family: 'Poppins',sans-serif;
+    
 }
 /* ===== SCROLL ANIMATED NAVBAR (NO HTML CHANGE) ===== */
 .navbar{
